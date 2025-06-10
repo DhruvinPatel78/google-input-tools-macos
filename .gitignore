@@ -3,3 +3,4 @@
 *.xcuserdatad
 xcuserdata
 build
+.env
