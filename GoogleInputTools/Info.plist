@@ -4,12 +4,12 @@
 <dict>
 	<key>tsInputMethodCharacterRepertoireKey</key>
 	<array>
-		<string>Hans</string>
+		<string>Gujr</string>
 	</array>
 	<key>InputMethodServerControllerClass</key>
 	<string>$(PRODUCT_MODULE_NAME).GoogleInputToolsController</string>
 	<key>InputMethodConnectionName</key>
-	<string>GoogleInputTools_Connection</string>
+	<string>GujaratiInputTools_Connection</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

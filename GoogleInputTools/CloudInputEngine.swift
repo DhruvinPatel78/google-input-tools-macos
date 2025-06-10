@@ -8,21 +8,16 @@
 import Foundation
 
 enum InputTool: String {
-    case Pinyin = "zh-t-i0-pinyin"
-    case Shuangpin_ABC = "zh-t-i0-pinyin-x0-shuangpin-abc"
-    case Shuangpin_Microsoft = "zh-t-i0-pinyin-x0-shuangpin-ms"
-    case Shuangpin_Xiaohe = "zh-t-i0-pinyin-x0-shuangpin-flypy"
-    case Shuangpin_Jiajia = "zh-t-i0-pinyin-x0-shuangpin-jiajia"
-    case Shuangpin_Ziguang = "zh-t-i0-pinyin-x0-shuangpin-ziguang"
-    case Shuangpin_Ziranma = "zh-t-i0-pinyin-x0-shuangpin-ziranma"
-    case Wubi = "zh-t-i0-wubi-1986"
+    case Gujarati = "gu-t-i0-und"
+    case Gujarati_Phonetic = "gu-t-i0-und-x0-phonetic"
+    case Gujarati_Inscript = "gu-t-i0-und-x0-inscript"
 }
 
 class CloudInputEngine {
 
     static let shared = CloudInputEngine()
 
-    let _inputTool = InputTool.Pinyin
+    let _inputTool = InputTool.Gujarati
     let _candidateNum = 11
 
     func requestCandidates(
@@ -47,13 +42,13 @@ class CloudInputEngine {
               "SUCCESS",
               [[
                 "abc",
-                ["ABC","啊","阿","A","吖","腌","呵","阿布","嗄","啊不","锕"],
+                ["ABC","અ","આ","A","અક્ષર","અમે","અહીં","અને","અથવા","અન્ય","અંગે"],
                 [],
                 {
-                    "annotation":["a b c","a","a","a","a","a","a","a bu","a","a bu","a"],
+                    "annotation":["a b c","a","aa","a","akshar","ame","ahii","ane","athavaa","anya","ange"],
                     "candidate_type":[0,0,0,0,0,0,0,0,0,0,0],
-                    "lc":["0 0 0","16","16","0","16","16","16","16 16","16","16 16","16"],
-                    "matched_length":[3,1,1,1,1,1,1,2,1,2,1]
+                    "lc":["0 0 0","16","16","0","16","16","16","16","16","16","16"],
+                    "matched_length":[3,1,1,1,1,1,1,1,1,1,1]
                 }
               ]]
              ]

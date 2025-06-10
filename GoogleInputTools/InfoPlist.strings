@@ -1,9 +1,9 @@
 /* 
   InfoPlist.strings
-  GoogleInputTools
+  GujaratiInputTools
 
   Created by lennylxx on 9/2/21.
   
 */
 
-CFBundleName = "Google Input Tools";
+CFBundleName = "Gujarati Input Tools";

@@ -1,9 +1,8 @@
-# Google Input Tools for macOS
+# Gujarati Input Tools for macOS
 
 [![Build Status](https://github.com/lennylxx/google-input-tools-macos/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/lennylxx/google-input-tools-macos/actions/workflows/build.yml?query=branch%3Amain)
 
-A *cloud* input method that uses [Google Input Tools](https://www.google.com/inputtools/) as engine for macOS.
-
+A *cloud* input method that uses [Google Input Tools](https://www.google.com/inputtools/) as engine for macOS to type in Gujarati.
 
 ## How to use
 
@@ -19,7 +18,7 @@ A *cloud* input method that uses [Google Input Tools](https://www.google.com/inp
 
 > The output will be `~/Library/Input\ Methods/GoogleInputTools.app`
 
-3. Open `System Preferences` -> `Keyboard` -> `Input Sources`, click `+` to add a new input method, choose `Chinese, Simplified` -> `Google Input Tools`.
+3. Open `System Preferences` -> `Keyboard` -> `Input Sources`, click `+` to add a new input method, choose `Gujarati` -> `Gujarati Input Tools`.
 
 4. If you want to remove it, simply run below command.
 
@@ -29,7 +28,7 @@ A *cloud* input method that uses [Google Input Tools](https://www.google.com/inp
   ```
 
 ## Screenshot
-<img width="555" alt="screenshot" src="https://user-images.githubusercontent.com/5811576/131733470-c946efa3-0f80-4227-a4b1-9d047f51f47b.png">
+The input method will show Gujarati candidates when you type English letters. For example, typing "namaste" will show "નમસ્તે" as a candidate.
 
 ## Progress
 
@@ -56,7 +55,15 @@ A *cloud* input method that uses [Google Input Tools](https://www.google.com/inp
   - [ ] Skin manager
 - [x] Cloud engine
   - [ ] Cancel previous unnecessary web requests to speed up
-- [ ] Chinese/English mode toggle
-- [ ] Fullwidth form of punctuation in Chinese mode
-- [ ] Input tool switching, such as Pinyin, Shuangpin, Wubi, etc.
+- [ ] Gujarati/English mode toggle
+- [ ] Fullwidth form of punctuation in Gujarati mode
+- [ ] Input tool switching, such as Phonetic, InScript, etc.
 - [ ] Allow to use HTTP/SOCKS proxy
+
+## Input Methods Available
+
+- **Gujarati (Default)**: Standard Gujarati transliteration
+- **Gujarati Phonetic**: Phonetic-based input method
+- **Gujarati InScript**: InScript keyboard layout for Gujarati
+
+You can change the input method by modifying the `_inputTool` property in `CloudInputEngine.swift`.

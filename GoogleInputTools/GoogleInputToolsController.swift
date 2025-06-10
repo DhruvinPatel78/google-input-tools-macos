@@ -1,6 +1,6 @@
 //
-//  GoogleInputToolsController.swift
-//  GoogleInputTools
+//  GujaratiInputToolsController.swift
+//  GujaratiInputTools
 //
 //  Created by lennylxx on 8/22/21.
 //
